@@ -1,0 +1,34 @@
+{
+  "name": "ashraf/coffeforme",
+  "authors": [
+    {
+      "name": "Muhammad Ashraf"
+    }
+  ],
+  "require": {
+    "php": ">= 8.1",
+    "symfony/dotenv": "^6.3",
+    "symfony/mailer": "^6.3",
+    "ph-7/materialize-css": "^1.0",
+    "symfony/templating": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "coffeforme\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "scripts": {
+    "post-cmd": [
+      "cp -Rf vendor/ph-7/materialize-css/dist/* assets/materialize"
+    ],
+    "post-install-cmd": [
+      "@post-cmd"
+    ],
+    "post-update-cmd": [
+      "@post-cmd"
+    ]
+  }
+}

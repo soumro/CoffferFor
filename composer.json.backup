@@ -1,0 +1,15 @@
+{
+  "require": {
+    "php": ">= 8.1",
+    "symfony/dotenv": "^6.3",
+    "symfony/mailer": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "coffeforme\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  }
+}
